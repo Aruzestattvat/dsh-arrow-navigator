@@ -1,0 +1,12 @@
+# dsh-arrow-navigator —— DSH bundle patch
+#
+# 这是一个 dsh "bundle" 包：DSH 启动时按 bundle 层栈叠加各插件 patch，
+# 本文件把插件的 Loader 条目插入当前 profile 的配置树。
+#
+# 安装方式（推荐，插件管理器会同时写入 profile 的 bundles 列表）：
+#   dsh plugin --profile desktop add link:<本目录绝对路径>
+# 或者直接在 DSH 里用插件管理器安装本地目录。
+
+- insert:
+    - id: dsh-arrow-navigator
+      name: dsh-arrow-navigator
